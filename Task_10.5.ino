@@ -43,9 +43,7 @@ void setup() {
   Serial.begin(9600); 
   time = millis();
 
-
-/*Here we calculate the acc data error before we start the loop
- * I make the mean of 200 values, that should be enough*/
+ //Calculating Error in Both acc and gyro with 200 values 
   if(acc_error==0)
   {
     for(int a=0; a<200; a++)
